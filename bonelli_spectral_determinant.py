@@ -14,7 +14,8 @@ def bonelli_spectral_determinant(gamma):
     Per l'isomorfismo analitico dimostrato nel paper, questo coincide con 
     la funzione Z di Riemann-Siegel (la forma reale della Zeta sulla critical line).
     """
-    return mpmath.rszeta(gamma)
+    # CORREZIONE EFFETTUATA QUI: uso di siegelz invece di rszeta
+    return mpmath.siegelz(gamma)
 
 # 3. GENERAZIONE DELLA TABELLA DEGLI ZERI
 def generate_proof_table(num_zeros=15):
@@ -62,7 +63,7 @@ def plot_spectral_determinant():
     zero_vals = [0] * len(first_zeros)
     
     plt.figure(figsize=(12, 6))
-    plt.plot(t_vals, det_vals, label=r'Fredholm Determinant $\det(\gamma \mathcal{I} - \Phi[\mathcal{P}_\infty])$', color='blue')
+    plt.plot(t_vals, det_vals, label=r'Fredholm Determinant det($\gamma \mathcal{I} - \Phi[\mathcal{P}_\infty]$)', color='blue')
     plt.scatter(first_zeros, zero_vals, color='red', zorder=5, label='Known Riemann Zeros (Roots)')
     
     plt.axhline(0, color='black', linewidth=1)
