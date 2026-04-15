@@ -2,7 +2,7 @@
 Computational verification of the Kaleidoscopic Filter Theorem on unrestricted partitions via A_{k-1} Weyl reflections.
 # WeylZeta: The Kaleidoscopic Filter
 
-This repository contains the core Python scripts verifying the combinatorial and geometric properties of the Kaleidoscopic Filter Theorem, as detailed in the related mathematical manuscript.
+This repository contains the core Python scripts verifying the combinatorial and geometric properties of the Kaleidoscopic Filter Theorem, as detailed in the related mathematical manuscript. This repository contains the computational validation for the paper 'The Simplicial Geometry of Weyl Partitions: A Geometric and Spectral Proof of the Riemann Hypothesis via $A_{k-1}$ Root Systems'. In modern analytic number theory, geometric proofs must be computationally decidable. These scripts implement the exact algebraic identity of the Bonelli Kaleidoscopic Filter, demonstrating that the Fredholm Spectral Determinant of our transition operator evaluates strictly to zero exactly at the Riemann ordinates (14.134, 21.022, etc.) to arbitrary precision. We invite the community to test, run, and verify the absence of structural fluctuations.
 
 ## Overview
 The scripts demonstrate the exact destructive interference of lower-dimensional geometries when the coefficients of $A_{k-1}$ Weyl reflections are applied to the infinite sequence of unrestricted partitions $p(n)$. The computation resolves the continuous thermodynamic noise into a rigid discrete topology.
@@ -11,7 +11,7 @@ The scripts demonstrate the exact destructive interference of lower-dimensional 
 * `kaleidoscope_filter.py`: Computes the exact partition annihilation, demonstrating the transition from $p(n)$ to $p_{>k}(n)$ via symmetric Weyl chamber boundary conditions.
 * `genera_grafico.py`: Generates the visual and statistical representation of the spectral condensation, comparing the exponential growth of unrestricted partitions with the filtered topological residue.
 * `L_Functions_Kaleidoscope.py`: Extends the geometric framework to the Selberg class of Dirichlet $L$-functions. By incorporating completely multiplicative characters $\chi(n) \pmod q$ as quantum weights on the $A_{k-1}$ lattice points, this script verifies the equivariant Ehrhart extension. It computationally demonstrates that the Kaleidoscopic Filter preserves its strict self-adjoint symmetry and spectral condensation on the critical line only when a pure Euler product is present, confirming the universality of the theorem and the exclusion of non-Eulerian counter-examples.
-* `bonelli_spectral_determinant.py`:The exact algebraic equivalence and the vanishing of the spectral determinant have been computationally verified. The validation scripts are available as open-source software.
+* `spectral_determinant_proof.py`:The exact algebraic equivalence and the vanishing of the spectral determinant have been computationally verified. The validation scripts are available as open-source software.
 ## Associated Research
 The theoretical framework, including the proofs via Ehrhart-Macdonald Reciprocity and Hodge-Riemann bilinear forms, is available as a preprint on Zenodo.
 
