@@ -11,7 +11,7 @@ The scripts demonstrate the exact destructive interference of lower-dimensional 
 * `kaleidoscope_filter.py`: Computes the exact partition annihilation, demonstrating the transition from $p(n)$ to $p_{>k}(n)$ via symmetric Weyl chamber boundary conditions.
 * `genera_grafico.py`: Generates the visual and statistical representation of the spectral condensation, comparing the exponential growth of unrestricted partitions with the filtered topological residue.
 * `L_Functions_Kaleidoscope.py`: Extends the geometric framework to the Selberg class of Dirichlet $L$-functions. By incorporating completely multiplicative characters $\chi(n) \pmod q$ as quantum weights on the $A_{k-1}$ lattice points, this script verifies the equivariant Ehrhart extension. It computationally demonstrates that the Kaleidoscopic Filter preserves its strict self-adjoint symmetry and spectral condensation on the critical line only when a pure Euler product is present, confirming the universality of the theorem and the exclusion of non-Eulerian counter-examples.
-
+* `bonelli_spectral_determinant.py`:The exact algebraic equivalence and the vanishing of the spectral determinant have been computationally verified. The validation scripts are available as open-source software.
 ## Associated Research
 The theoretical framework, including the proofs via Ehrhart-Macdonald Reciprocity and Hodge-Riemann bilinear forms, is available as a preprint on Zenodo.
 
